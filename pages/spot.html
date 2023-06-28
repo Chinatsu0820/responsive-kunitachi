@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spot</title> <!--This is FLEXBOX page-->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!--MENU-->
+    <!--Parent Flex container with .menu-container-->
+    <!--.menu-container has 6 flex items / 1 .menu-icon and 5 .menu-button-->
+    <nav class="menu-container">
+        <img class="menu-icon" src="../imgs/kuninyan-icon.jpg"
+            alt="This is a picture of the mascot for Kunitachi-shi named Kuninyan.">
+        <a class="menu-button" href="../index.html">HOME</a>
+        <a class="menu-button" href="history.html">HISTORY</a>
+        <a class="menu-button" href="spot.html">SPOT</a>
+        <a class="menu-button" href="event.html">EVENT</a>
+        <a class="menu-button" href="kuninyan.html">KUNINYAN</a>
+    </nav>
+
+    <!--FLEXBOX PAGE-->
+    <!--The outermost parent Flex container with .spot-container-->
+    <!--.spot.container has 2 flex items / 1.spot-ganre and 1 .spot-introduce-->
+    <section class="spot-container">
+        <!--SIDEBAR-->
+        <!--Parent Flex container with .spot-ganre-->
+        <!--.spot-ganre has 4 flex itmes / 1 spot-title and 3 .spot-ganrename-->
+        <section class="spot-ganre">
+            <h1 class="spot-title">Spot in Kunitachi</h1>
+            <a class="spot-ganrename" href="#spot-food">FOOD</a>
+            <a class="spot-ganrename" href="#spot-shopping">SHOPPING</a>
+            <a class="spot-ganrename" href="#spot-enjoy">ENJOY</a>
+        </section>
+        <!--GALLERY-->
+        <!--Parent Flex container with .spot-introduce-->
+        <!--.spot-introduve has 22 flex items / 3 .spot-subtitle and 19 .spot-->
+        <section class="spot-introduce">
+            <!-- FOOD PART -->
+            <!-- I used id so that they go to each ganre introduction when they click .spot-ganrename button(link) -->
+            <h2 class="spot-subtitle" id="spot-food">FOOD</h2>
+            <div class="spot">
+                <img class="spot-picture" src="../imgs/food-kyouya.jpg"
+                    alt="This is a picture of Okaka Teishoku in a Japanese restaurant named Kyoya Shokudo.">
+                <p class="spot-text">
+                    <strong>Kyoya Shokudo</strong> &#40;Japanese restaurant&#41; <br>- Okaka Teishoku
+                </p>
+            </div>
+            <div class="spot">
+                <img class="spot-picture" src="../imgs/food-rojinasabo.jpg"
+                    alt="This is a picture of Zai curry in a cafe named Rojina Sabo.">
+                <p class="spot-text">
+                    <strong>Rojina Sabo</strong> &#40;Cafe&#41; <br>- Zai curry
+                </p>
+            </div>
+            <div class="spot">
+                <img class="spot-picture" src="../imgs/food-toriiduka.jpg"
+                    alt="This is a picture of Sashimi Teishoku in a Japanese restaurant named Toriiduka.">
+                <p class="spot-text">
+                    <strong>Toriiduka</strong> &#40;Japanese restaurant&#41; <br>- Sashimi Teishoku
+                </p>
+            </div>
+            <div class="spot">
+                <img class="spot-picture" src="../imgs/food-hirayoshi.jpg"
+                    alt="This is a picture of Tonkatsu Teisyoku in a Tonkatsu restaurant named Hirayoshi.">
+                <p class="spot-text">
+                    <strong>Hirayoshi</strong> &#40;Tonkatsu restaurant&#41; <br>- Tonkatsu Teishoku
+                </p>
+            </div>
+            <div class="spot">
+                <img class="spot-picture" src="../imgs/food-turihune.jpg"
+                    alt="This is a picture of Tendon in a Japanese restaurant named Fukagawa Tsurihune.">
+                <p class="spot-text">
+                    <strong>Fukagawa Tsurihune</strong> &#40;Japanese restaurant&#41; <br>- Tendon
+                </p>
+            </div>
+            <div class="spot">
+                <img class="spot-picture" src="../imgs/food-borton.jpg"
+                    alt="This is a picture of a parfait in a cake shop named Borton Kashiya.">
+                <p class="spot-text">
+                    <strong>Borton Kashiya</strong> &#40;Cake shop&#41; <br>- Seasonal parfait
+                </p>
+            </div>
+            <div class="spot">
+                <img class="spot-picture" src="../imgs/food-kakiya.jpg"
+                    alt="This is a picture of bagels in a bagle shop named Kakiya Bagle.">
+                <p class="spot-text">
+                    <strong>Kakiya Bagle</strong> &#40;Bagle shop&#41; <br>- Bagels
+                </p>
+            </div>
+            <div class="spot">
+                <img class="spot-picture" src="../imgs/food-tsujitokyo.jpg"
+                    alt="This is a picture of cakes in a cake shop named Atelier Tsuji Tokyo.">
+                <p class="spot-text">
+                    <strong>Atelier Tsuji Tokyo</strong> &#40;Cake shop of a school&#41; <br>- Cakes
+                </p>
+            </div>
+            <div class="spot">
+                <img class="spot-picture" src="../imgs/food-vivant.jpg"
+                    alt="This is a picture of a strawberry cake in a cake shop named Patisserie cafe VIVANT .">
+                <p class="spot-text">
+                    <strong>Patisserie cafe VIVANT</strong> &#40;Cake shop and Cafe&#41; <br>- Strawberry cake
+                </p>
+            </div>
+            <!-- SHOPPING PART -->
+            <h2 class="spot-subtitle" id="spot-shopping">SHOPPING</h2>
+            <div class="spot">
+                <img class="spot-picture" src="../imgs/shopping-kiiroitori.jpg"
+                    alt="This is a picture of a variety store named Kiiroitori Utsuwa Ten.">
+                <p class="spot-text">
+                    <strong>Kiiroitori Utsuwa Ten</strong> &#40;Variety store&#41;
+                </p>
+            </div>
+            <div class="spot">
+                <img class="spot-picture" src="../imgs/shopping-shunka.jpg"
+                    alt="This is a picture of a farmar's market named Shunka Shunka.">
+                <p class="spot-text">
+                    <strong>Kunitachi Yasai Shunka Shunka</strong> &#40;Farmar's market&#41;
+                </p>
+            </div>
+            <div class="spot">
+                <img class="spot-picture" src="../imgs/shopping-coffea.jpg"
+                    alt="This is a coffee beans shop named COFFEA Kunitachi.">
+                <p class="spot-text">
+                    <strong>COFFEA Kunitachi</strong> &#40;Coffee beans shop&#41;
+                </p>
+            </div>
+            <div class="spot">
+                <img class="spot-picture" src="../imgs/shopping-nonowa.jpg"
+                    alt="This is a shopping mall named Nonowa Kunitachi.">
+                <p class="spot-text">
+                    <strong>Nonowa Kunitachi</strong> &#40;Shopping mall&#41;
+                    <br>- There is a starbacks for hearing-impaired people here.
+                </p>
+            </div>
+            <div class="spot">
+                <img class="spot-picture" src="../imgs/shopping-sizeniryou.jpg"
+                    alt="This is a organic store named SAP.">
+                <p class="spot-text">
+                    <strong>Shizen Iryou Zakka SAP</strong> &#40;Organic store&#41;
+                </p>
+            </div>
+            <!-- ENJOY PART -->
+            <h2 class="spot-subtitle" id="spot-enjoy">ENJOY</h2>
+            <div class="spot">
+                <img class="spot-picture" src="../imgs/enjoy-daigakudori.jpg"
+                    alt="This is a picture of a street named Daigaku-dori.">
+                <p class="spot-text">
+                    <strong>Daigaku Street</strong> &#40;Street that leads to Kunitachi station&#41;
+                </p>
+            </div>
+            <div class="spot">
+                <img class="spot-picture" src="../imgs/enjoy-yahoten.jpeg"
+                    alt="This is a picture of a shrine named Yaho-tenmangu.">
+                <p class="spot-text">
+                    <strong>Yahotenmangu Shrine</strong> &#40;Shrine&#41;
+                    <br>- It is known as one of the three major Tenjin shrines in the Kanto region,
+                    alongside Kameido Tenjin Shrine and Yushima Tenjin Shrine, and is considered
+                    the oldest Tenjin shrine in Eastern Japan.
+                </p>
+            </div>
+            <div class="spot">
+                <img class="spot-picture" src="../imgs/enjoy-joyama.jpg"
+                    alt="This is a picture of a historical site named Joyama Park.">
+                <p class="spot-text">
+                    <strong>Joyama Park</strong> &#40;Historical site&#41;
+                    <br>- It is said to be the remains of a medieval feudal lord's residence and is
+                    designated as a historical preservation area in Tokyo.
+                </p>
+            </div>
+            <div class="spot">
+                <img class="spot-picture" src="../imgs/enjoy-kunitachioldst.jpg"
+                    alt="This is a picture of a small museum named Kunitachi Kyu Ekisha.">
+                <p class="spot-text">
+                    <strong>Kunitachi Old Station</strong>
+                    &#40;Museum about Kunitachi history, Information desk, and Rest area&#41;
+                </p>
+            </div>
+            <div class="spot">
+                <img class="spot-picture" src="../imgs/enjoy-park.jpg"
+                    alt="This is a picture of a park named Daiyon Koen.">
+                <p class="spot-text">
+                    <strong>The Forth Park</strong> &#40;Park which has a water fountain&#41;
+                </p>
+            </div>
+        </section>
+    </section>
+
+    <!--FOOTER-->
+    <!--Parent Flex container with .footer-container-->
+    <!--.footer-container has 3 flex itmes / All of them are .footer-button-->
+    <footer class="footer-container">
+        <a class="footer-button" href="https://twitter.com">
+            <img class="footer-img" src="../imgs/footer-twitter.png" alt="This is an link icon of Twitter.">
+        </a>
+        <a class="footer-button" href="https://instagram.com">
+            <img class="footer-img" src="../imgs/footer-instagram.png" alt="This is an link icon of Instagram.">
+        </a>
+        <a class="footer-button" href="https://facebook.com">
+            <img class="footer-img" src="../imgs/footer-facebook.png" alt="This is an link icon of Facebook.">
+        </a>
+    </footer>
+
+</body>
+
+</html>

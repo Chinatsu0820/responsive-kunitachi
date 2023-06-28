@@ -1,0 +1,197 @@
+/* -----------------------------ALL PAGE----------------------------- */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP'); /* This is a font source of this website */
+
+* {
+    margin: 0; /* 要素の外側のマージンをゼロに設定 */
+    padding: 0; /* 要素の内側のパディングをゼロに設定 */
+    box-sizing: border-box; /* 幅や高さの指定がコンテンツのボックス全体に対して行われる */
+    color: black; /* aタグ含め、ページ全体の文字色を設定 */
+    font-family: 'Noto Sans JP', sans-serif; /* フォントを指定（import元はcss最上部に記載) */
+}
+
+
+/* -------------------------------MENU------------------------------- */
+.menu-container {
+    display: flex;
+    align-items: center; /* アイテムの縦の並びを中央に揃える */
+    background-color: #d4a48e;
+}
+
+.menu-icon {
+    height: 100px;
+    margin-right: auto; /* 左端のアイテムのみを左端に寄せたいときにそのアイテムに使用する */
+    margin-left: 10px;
+}
+
+.menu-button {
+    margin : 20px;
+    padding : 18px;
+    text-decoration: none; /* aタグにデフォルトでついてくるアンダーバーを消す */
+}
+
+.menu-button:hover { /* マウスオーバー時に色を変える */
+    background-color: rgba(130, 105, 105, 0.479);
+}
+
+
+/* ---------------------------BOXMODEL PAGE--------------------------- */
+.home-container {
+    background-color: rgba(244, 206, 193, 0.564);
+    border: 5px solid rgb(143, 73, 73);
+    width: 1200px;
+    margin: 50px auto;
+    padding: 50px 100px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.home-title,.home-text {
+    margin-bottom: 10px;
+}
+
+
+/* --------------------------FOLOAT_LEFT PAGE-------------------------- */
+.history-container {
+    padding: 50px 120px;
+    margin: auto;
+}
+
+.history-title,.history-text {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.history-picture {
+    float: left;
+    width: 200px;
+    margin-right: 20px;
+}
+
+
+/* --------------------------FOLOAT_RIGHT PAGE-------------------------- */
+.kuninyan-container {
+    padding: 50px 250px;
+    margin: auto;
+}
+
+.kuninyan-title {
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.kuninyan-picture {
+    float: right;
+    width: 300px;
+    margin-right: 120px;
+}
+
+.kuninyan-text {
+    line-height: 1.5;
+}
+
+.profile-title {
+    font-size: 22px;
+}
+
+.profile-list {
+    margin: 10px;
+    font-size: 22px;
+}
+
+
+/* ---------------------------FLEXBOX PAGE--------------------------- */
+.spot-container {
+    display: flex;
+}
+/* --SIDE BAR-- */
+.spot-ganre {
+    display: flex;
+    flex-flow: column; /* 子要素の並びを縦にする */
+}
+
+.spot-title {
+    width: 250px;
+    margin: 20px;
+}
+
+.spot-ganrename {
+    width: 250px;
+    margin: 20px;
+}
+/* --GALLERY-- */
+.spot-introduce {
+    display: flex;
+    flex-wrap: wrap; /* 折り返しする */
+    overflow-y: scroll; /* introduce部分だけ縦にスクロールできるように使用*/
+    height: 550px;
+    gap: 30px;
+}
+
+.spot-picture {
+    width: 400px;
+    height: 300px;
+}
+
+.spot-text {
+    width: 400px;
+    height: 200px;
+}
+
+.spot-subtitle {
+    width: 100%; /*入れ子をこれ以上行わずに折り返すために使用　指定された要素の空間の残り横いっぱいに広がる*/
+    margin: 30px;
+    font-size: 30px;
+}
+
+
+/* -------------------------BLOCK_ELEMENT PAGE------------------------- */
+.event-container {
+    text-align: center; /* 文章を中央揃えにする*/
+    padding: 20px 0px;
+}
+/* --BLOCK1-- */
+.event {
+    width: 800px;
+    margin: auto; /* 20pxで縦の外空白を調整、autoで左右の空白を均等に調整*/
+}
+
+.event-title {
+    margin: 10px 0px;
+    font-size: 30px;
+}
+/* --BLOCK2-- */
+.event-introduce {
+    width: 800px;
+    margin: 20px auto; /* 10pxで縦の外空白を調整、autoで左右の空白を均等に調整 */
+}
+
+.event-scheduletitle {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.event-schedule {
+    text-align: left; /* スケジュールのみ左詰めで表記させる */
+    margin-left: 200px;
+    line-height: 1.5;
+}
+
+
+/* ------------------------------FOOTER------------------------------ */
+.footer-container {
+    height: 100px;
+    display: flex;
+    justify-content: center; /* 横並びのアイテムを左右の中央に配置 */
+    align-items: end; /* アイテムを下に配置 */
+    background-color: #d4a48e;
+}
+
+.footer-button {
+    margin: 10px 30px;
+}
+
+.footer-img {
+    height: 40px;
+}
+
+
