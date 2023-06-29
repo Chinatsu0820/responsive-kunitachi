@@ -1,17 +1,15 @@
-This is a final assignment on the first term of Web develper course in Tamwood.
-The primary goal of this assignment is to understand css box model and layout behaviors such as flexbox.
+This is a second assignment remaking the final assignment on the first term of Web develper course in Tamwood.
+The primary goal of this assignment is to using and understand all of the things I learned like Flexbox, Grid, CSS units, media queries, responsive (mobile, tablet, desktop) etc.
 
 This website introduces my country.
 I am from Tokyo, Japan.
 I was born in Suginami-ku, but I grew up in Kunitachi-shi <国立市> (Both are in Tokyo).
 Therefore I chose Kunitachi-shi to make the website. 
 
-
-I have to create 5pages, and each of these pages must replicate the layouts provided by the teacher. 
-All the pages should have a nav and a footer, both of which should be Flex containers.
+I have 5pages, all of the pages should have a nav and a footer.
 
 event.html
- -A page whose main section is a Block, and contains two other Block elements inside it
+ -A page whose main section is a Block
 
 index.html
  -A page whose main section is a Block, and is styled to showcase the CSS Box Model
@@ -20,14 +18,14 @@ history.html
  -A page whose main section is a Block, and has another Block inside with a Floated element inside it and other content wrapping around it. The Floated element should be Floated to the left.
 
 kuninyan.html
- -Another page like the one above, but whose Float is Floated to the right.
+ -A page whose main section is a Grid. This page was Float-Right page before.
 
 spot.html
  -A page whose main section is a Flex container, which contains two Flex containers; the first one has flex-direction set to column, and the second one to the default of rows, with rows wrapping.
 
 
 Another important requirement taken into account for grading:
- -Add simple and concise comment lines in my HTML and CSS to indicate where each page section / container starts, and provide some description of how it is behaving (block, float, flex container, or flex item) 
+ -Add simple and concise comment lines in my HTML and CSS to indicate where each page section / container starts, and provide some description of how it is behaving (block, float, flex container, flex item, or Grid) .
  -Make sure my HTML is properly indented so it is easy to identify each section / element
 
 I can style my web pages however I like, and I can add whatever theme / content I like. Feel free to repeat themes and content from my previous assignments if I want. 

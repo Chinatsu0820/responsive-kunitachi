@@ -10,78 +10,93 @@
 </head>
 
 <body>
-    <!--MENU-->
-    <!--Parent Flex container with .menu-container-->
-    <!--.menu-container has 6 flex items / 1 .menu-icon and 5 .menu-button-->
-    <nav class="menu-container">
-        <img class="menu-icon" src="imgs/kuninyan-icon.jpg"
-            alt="This is a picture of the mascot for Kunitachi-shi named Kuninyan.">
-        <a class="menu-button" href="index.html">HOME</a>
-        <a class="menu-button" href="pages/history.html">HISTORY</a>
-        <a class="menu-button" href="pages/spot.html">SPOT</a>
-        <a class="menu-button" href="pages/event.html">EVENT</a>
-        <a class="menu-button" href="pages/kuninyan.html">KUNINYAN</a>
+    <section class="heightset" id="heightset-back">
+        <!--MENU-->
+        <!--Parent Flex container with .menu-container-->
+        <!--.menu-container has 6 flex items / 1 .menu-icon and 5 .menu-button-->
+        <nav class="menu-container">
+            <img class="menu-icon" src="imgs/kuninyan-icon.jpg"
+                alt="This is a picture of the mascot for Kunitachi-shi named Kuninyan.">
+            <a class="menu-button" href="index.html">HOME</a>
+            <a class="menu-button" href="pages/history.html">HISTORY</a>
+            <a class="menu-button" href="pages/spot.html">SPOT</a>
+            <a class="menu-button" href="pages/event.html">EVENT</a>
+            <a class="menu-button" href="pages/kuninyan.html">KUNINYAN</a>
+        <!-- for mobile -->   
+        <input type="checkbox" id="check">
+        <label for="check" class="menu-hamburger">
+            <img src="imgs/hamburger-menu.svg" alt="This is a hamburger-menu button." />
+        </label>
+        <div class="menu-list-mobile">
+            <a class="menu-button-m" href="index.html">HOME</a>
+            <a class="menu-button-m" href="pages/history.html">HISTORY</a>
+            <a class="menu-button-m" href="pages/spot.html">SPOT</a>
+            <a class="menu-button-m" href="pages/event.html">EVENT</a>
+            <a class="menu-button-m" href="pages/kuninyan.html">KUNINYAN</a>
+        </div>
     </nav>
 
-    <!--BOXMODEL PAGE-->
-    <!--CSS boxmodel with .home-container-->
-    <section class="home-container">
-        <h1 class="home-title">What is Kunitachi like?</h1>
-        <p class="home-text">
-            Kunitachi City is located in the central part of Tokyo, Japan. It borders Fuchu City to
-            the east, Tachikawa City to the west, Kokubunji City to the north, and Hino City across
-            the Tama River to the south. It is the second smallest city in Tokyo and the fourth smallest
-            city in Japan.
-        </p>
-        <p class="home-text">
-            Despite being a small city, Kunitachi has many attractions.
-        </p>
-        <p class="home-text">
-            As the first designated cultural and educational district in Tokyo, Kunitachi is home to
-            numerous educational institutions such as universities and high schools. During the daytime,
-            the city is vibrant with many students, but there are regulations on the construction of
-            facilities that may impact education, giving the entire city a calm atmosphere. The main
-            street of the city, known as Daigaku-dori, and its surrounding area are filled with trendy
-            shops and restaurants, making it an enjoyable place to stroll around. When visiting
-            Kunitachi, be sure to explore the unique shops scattered throughout the city and enjoy shopping.
-        </p>
-        <p class="home-text">
-            Daigaku-dori, which extends straight south from JR Kunitachi Station, is the city's main
-            street and is approximately 44 meters wide. Currently, cherry trees and gingko trees are
-            planted alternately along the green belts on both sides of the road. In spring, the cherry
-            blossoms create a curtain of pink petals, while in autumn, the golden leaves of the gingko
-            trees radiate a brilliant glow. This scenery has been selected as one of the "New Tokyo Top
-            100 Views" and has become a symbol of Kunitachi.
-        </p>
-        <p class="home-text">
-            If you want to experience a different side of Kunitachi, take a walk southward along
-            Daigaku-dori and enjoy exploring the green and rural areas in the southern part of the city.
-            It is a place where you can witness another charm of Kunitachi that is completely different
-            from the main street.
-        </p>
-        <p class="home-text">
-            Such a dual charm harmonizes within the compact space of 8.15 square kilometers. I encourage
-            all of you to visit this city, filled with greenery and distinctive characteristics, at least
-            once.
-        </p>
+
+        <!--BOXMODEL PAGE-->
+        <!--CSS boxmodel with .home-container-->
+        <div class="backimg">
+        <section class="home-container">
+            <h1 class="home-title">What is Kunitachi like?</h1>
+            <p class="home-text">
+                Kunitachi City is located in the central part of Tokyo, Japan. It borders Fuchu City to
+                the east, Tachikawa City to the west, Kokubunji City to the north, and Hino City across
+                the Tama River to the south. It is the second smallest city in Tokyo and the fourth smallest
+                city in Japan.
+            </p>
+            <p class="home-text">
+                Despite being a small city, Kunitachi has many attractions.
+            </p>
+            <p class="home-text">
+                As the first designated cultural and educational district in Tokyo, Kunitachi is home to
+                numerous educational institutions such as universities and high schools. During the daytime,
+                the city is vibrant with many students, but there are regulations on the construction of
+                facilities that may impact education, giving the entire city a calm atmosphere. The main
+                street of the city, known as Daigaku-dori, and its surrounding area are filled with trendy
+                shops and restaurants, making it an enjoyable place to stroll around. When visiting
+                Kunitachi, be sure to explore the unique shops scattered throughout the city and enjoy shopping.
+            </p>
+            <p class="home-text">
+                Daigaku-dori, which extends straight south from JR Kunitachi Station, is the city's main
+                street and is approximately 44 meters wide. Currently, cherry trees and gingko trees are
+                planted alternately along the green belts on both sides of the road. In spring, the cherry
+                blossoms create a curtain of pink petals, while in autumn, the golden leaves of the gingko
+                trees radiate a brilliant glow. This scenery has been selected as one of the "New Tokyo Top
+                100 Views" and has become a symbol of Kunitachi.
+            </p>
+            <p class="home-text">
+                If you want to experience a different side of Kunitachi, take a walk southward along
+                Daigaku-dori and enjoy exploring the green and rural areas in the southern part of the city.
+                It is a place where you can witness another charm of Kunitachi that is completely different
+                from the main street.
+            </p>
+            <p class="home-text">
+                Such a dual charm harmonizes within the compact space of 8.15 square kilometers. I encourage
+                all of you to visit this city, filled with greenery and distinctive characteristics, at least
+                once.
+            </p>
+        </section>
+    </div>
+
+        <!--FOOTER-->
+        <!--Parent Flex container with .footer-container-->
+        <!--.footer-container has 3 flex itmes / All of them are .footer-button-->
+        <footer class="footer-container">
+            <a class="footer-button" href="https://twitter.com">
+                <img class="footer-img" src="imgs/footer-twitter.png" alt="This is an link icon of Twitter.">
+            </a>
+            <a class="footer-button" href="https://instagram.com">
+                <img class="footer-img" src="imgs/footer-instagram.png" alt="This is an link icon of Instagram.">
+            </a>
+            <a class="footer-button" href="https://facebook.com">
+                <img class="footer-img" src="imgs/footer-facebook.png" alt="This is an link icon of Facebook.">
+            </a>
+        </footer>
     </section>
-
-    <!--FOOTER-->
-    <!--Parent Flex container with .footer-container-->
-    <!--.footer-container has 3 flex itmes / All of them are .footer-button-->
-    <footer class="footer-container">
-        <a class="footer-button" href="https://twitter.com">
-            <img class="footer-img" src="imgs/footer-twitter.png" alt="This is an link icon of Twitter.">
-        </a>
-        <a class="footer-button" href="https://instagram.com">
-            <img class="footer-img" src="imgs/footer-instagram.png" alt="This is an link icon of Instagram.">
-        </a>
-        <a class="footer-button" href="https://facebook.com">
-            <img class="footer-img" src="imgs/footer-facebook.png" alt="This is an link icon of Facebook.">
-        </a>
-    </footer>
-
-
 </body>
 
 </html>

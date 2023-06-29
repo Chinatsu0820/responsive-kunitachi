@@ -1,198 +1,372 @@
 /* -----------------------------ALL PAGE----------------------------- */
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP'); /* This is a font source of this website */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
+/* This is a font source of this website */
 
 * {
-    margin: 0; /* 要素の外側のマージンをゼロに設定 */
-    padding: 0; /* 要素の内側のパディングをゼロに設定 */
-    box-sizing: border-box; /* 幅や高さの指定がコンテンツのボックス全体に対して行われる */
-    color: black; /* aタグ含め、ページ全体の文字色を設定 */
-    font-family: 'Noto Sans JP', sans-serif; /* フォントを指定（import元はcss最上部に記載) */
+    margin: 0;
+    /* 要素の外側のマージンをゼロに設定 */
+    padding: 0;
+    /* 要素の内側のパディングをゼロに設定 */
+    box-sizing: border-box;
+    /* 幅や高さの指定がコンテンツのボックス全体に対して行われる */
+    color: black;
+    /* aタグ含め、ページ全体の文字色を設定 */
+    font-family: 'Noto Sans JP', sans-serif;
+    /* フォントを指定（import元はcss最上部に記載) */
 }
 
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.heightset {
+    /* コンテンツが少ない時でもfooterが一番下にくるように設定*/
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 5vh;
+}
 
 /* -------------------------------MENU------------------------------- */
 .menu-container {
     display: flex;
-    align-items: center; /* アイテムの縦の並びを中央に揃える */
+    align-items: center;
+    /* アイテムの縦の並びを中央に揃える */
     background-color: #d4a48e;
 }
 
 .menu-icon {
     height: 6vw;
-    margin-right: auto; /* 左端のアイテムのみを左端に寄せたいときにそのアイテムに使用する */
+    margin-right: auto;
+    /* 左端のアイテムのみを左端に寄せたいときにそのアイテムに使用する */
     margin-left: 1vw;
 }
 
 .menu-button {
-    padding : 1vw;
+    font-weight: bold;
+    padding: 1vw;
     margin: 1vw;
-    text-decoration: none; /* aタグにデフォルトでついてくるアンダーバーを消す */
+    text-decoration: none;
+    /* aタグにデフォルトでついてくるアンダーバーを消す */
 }
 
-.menu-button:hover { /* マウスオーバー時に色を変える */
+.menu-button:hover {
+    /* マウスオーバー時に色を変える */
     background-color: rgba(130, 105, 105, 0.479);
+}
+
+/* --menu button for mobile-- */
+input {
+    display: none;
+  }
+
+.menu-hamburger {
+    display: none;
+}
+
+.menu-list-mobile {
+    font-size: 20px;
+    position: fixed;
+    top: 10%;
+    right: -100%;
+    background: rgba(255, 255, 255, 0.735);
+    transition: .5s;
+    display: none;
+  }
+
+.menu-button-m {
+    display: block;
+    font-weight: bold;
+    padding: 1vw;
+    margin: 1vw;
+    text-decoration: none;
+}
+
+.menu-button-m:hover {
+    background-color: rgba(209, 121, 121, 0.479);
+}
+
+#check:checked~ .menu-list-mobile {
+    right: 0;
+}
+
+/* --Mobile-- */
+@media screen and (max-width: 599px) {
+    .menu-button {
+        display: none;
+    }
+
+    .menu-container {
+        justify-content: space-between;
+    }
+
+    .menu-hamburger {
+        display: block;
+    }
+
+    .menu-list-mobile {
+        display: block;
+      }
+    
+    #check:checked~ .menu-list-mobile {
+        right: 0;
+    }
 }
 
 
 /* ---------------------------BOXMODEL PAGE--------------------------- */
 .home-container {
     background-color: rgba(244, 206, 193, 0.564);
-    border: 5px solid rgb(143, 73, 73);
+    border: 0.5rem solid rgba(247, 245, 245, 0.432);
     width: 90vw;
-    margin: 5vw auto;
-    padding: 5vw 10vw;
-    font-size: 15px;
+    margin: 4vw auto 7vw;
+    padding: 4vw 8vw;
     line-height: 1.6;
+    font-weight: bolder;
+    text-shadow: 0 0 1rem #ffffff;
 }
 
-.home-title,.home-text {
-    margin-bottom: 10px;
+.home-title,
+.home-text {
+    margin-bottom: 1rem;
+}
+
+#heightset-back {
+    background-image: url(../imgs/kunitachi-irast.png);
+    background-size: cover;
+    background-repeat: no-repeat;/*画像が繰り返すのを防ぐ*/
 }
 
 
 /* --------------------------FOLOAT_LEFT PAGE-------------------------- */
 .history-container {
-    padding: 50px 120px;
+    padding: 3vw 9vw;
     margin: auto;
 }
 
-.history-title,.history-text {
-    margin-bottom: 10px;
+.history-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.history-text {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
     line-height: 1.5;
 }
 
 .history-picture {
     float: left;
-    width: 200px;
-    margin-right: 20px;
+    width: 40vh;
+    margin-right: 2rem;
 }
 
 
-/* --------------------------FOLOAT_RIGHT PAGE-------------------------- */
+/* --------------------------GRID PAGE-------------------------- */
 .kuninyan-container {
-    padding: 50px 250px;
-    margin: auto;
+    padding: 5vw 10vw;
+    width: 100%;
 }
 
 .kuninyan-title {
-    margin-bottom: 10px;
-    font-size: 30px;
+    margin: 1rem;
+    font-size: 3rem;
+    text-align: center;
 }
 
-.kuninyan-picture {
-    float: right;
-    width: 300px;
-    margin-right: 120px;
+.kuninyan-subtitle {
+    font-size: 2.2rem;
+    text-align: center;
 }
 
-.kuninyan-text {
-    line-height: 1.5;
+.kuninyan-grid {
+    display: grid;
+    gap: 2rem;
 }
 
-.profile-title {
-    font-size: 22px;
+#kuni-1 {
+    grid-area: item1;
 }
 
-.profile-list {
-    margin: 10px;
-    font-size: 22px;
+#kuni-2 {
+    grid-area: item2;
+}
+
+#kuni-3 {
+    grid-area: item3;
+}
+
+.kuninyan-list {
+    font-size: 2.2rem;
+    line-height: 1.6;
+    list-style: none;
+}
+
+
+/* --Desktop-- */
+@media screen and (min-width: 1024px) {
+    .kuninyan-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            'item1 item2 item3';
+    }
+}
+
+/* --Tablet-- */
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+    .kuninyan-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            'item1 item2'
+            'item3 item3';
+    }
+}
+
+/* --Mobile-- */
+@media screen and (max-width: 599px) {
+    .kuninyan-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'item2'
+            'item1'
+            'item3';
+    }
 }
 
 
 /* ---------------------------FLEXBOX PAGE--------------------------- */
 .spot-container {
     display: flex;
+    padding-bottom: 8vh;
 }
+
 /* --SIDE BAR-- */
-.spot-ganre {
+.spot-sticky {
     display: flex;
-    flex-flow: column; /* 子要素の並びを縦にする */
+    background-color: #d4a48e31;
+    margin: 2vw;
+    height: 100vh;
+    flex-flow: column;
+    /* 子要素の並びを縦にする */
+    position: sticky;
+    /* スクロールしてもついてくる*/
+    top: 0;
+    /* ついてくる位置の指定 */
 }
 
 .spot-title {
-    width: 250px;
-    margin: 20px;
+    font-size: 2vw;
+    margin: 2vw;
 }
 
 .spot-ganrename {
-    width: 250px;
-    margin: 20px;
+    margin: 2vw;
 }
+
 /* --GALLERY-- */
 .spot-introduce {
     display: flex;
-    flex-wrap: wrap; /* 折り返しする */
-    overflow-y: scroll; /* introduce部分だけ縦にスクロールできるように使用*/
-    height: 550px;
-    gap: 30px;
+    flex-wrap: wrap;
+    /* 折り返しする */
+    gap: 3vw;
 }
 
 .spot-picture {
-    width: 400px;
-    height: 300px;
+    width: 35vw;
+    height: 25vw;
 }
 
 .spot-text {
-    width: 400px;
-    height: 200px;
+    width: 35vw;
 }
 
 .spot-subtitle {
-    width: 100%; /*入れ子をこれ以上行わずに折り返すために使用　指定された要素の空間の残り横いっぱいに広がる*/
-    margin: 30px;
-    font-size: 30px;
+    width: 100%;
+    /*入れ子をこれ以上行わずに折り返すために使用　指定された要素の空間の残り横いっぱいに広がる*/
+    margin: 3rem;
+    font-size: 3rem;
 }
 
+/* --Mobile-- */
+@media screen and (max-width: 599px) {
+    .spot-introduce {
+        flex-flow: column;
+    }
+
+    .spot-picture {
+        width: 70vw;
+        height: 50vw;
+    }
+
+    .spot-text {
+        width: 70vw;
+        height: 30vw;
+    }
+}
 
 /* -------------------------BLOCK_ELEMENT PAGE------------------------- */
 .event-container {
-    text-align: center; /* 文章を中央揃えにする*/
-    padding: 20px 0px;
+    text-align: center;
+    /* 文章を中央揃えにする*/
 }
+
 /* --BLOCK1-- */
 .event {
-    width: 800px;
-    margin: auto; /* 20pxで縦の外空白を調整、autoで左右の空白を均等に調整*/
+    margin: 5vh auto;
 }
 
 .event-title {
-    margin: 10px 0px;
-    font-size: 30px;
+    font-size: 3rem;
 }
+
 /* --BLOCK2-- */
 .event-introduce {
-    width: 800px;
-    margin: 20px auto; /* 10pxで縦の外空白を調整、autoで左右の空白を均等に調整 */
+    width: 50vw;
+    margin: 2rem auto;
+    /* 2remで縦の外空白を調整、autoで左右の空白を均等に調整 */
 }
 
 .event-scheduletitle {
-    margin-bottom: 20px;
-    font-size: 20px;
+    margin-bottom: 2rem;
+    font-size: 2rem;
 }
 
 .event-schedule {
-    text-align: left; /* スケジュールのみ左詰めで表記させる */
-    margin-left: 200px;
+    text-align: left;
+    /* スケジュールのみ左詰めで表記させる */
     line-height: 1.5;
+    margin-bottom: 10vh;
 }
 
+/* --Desktop-- */
+@media screen and (min-width: 1024px) {
+    .event-schedule {
+        margin-left: 10vw;
+    }
+}
 
 /* ------------------------------FOOTER------------------------------ */
 .footer-container {
     display: flex;
-    justify-content: center; /* 横並びのアイテムを左右の中央に配置 */
-    align-items: end; /* アイテムを下に配置 */
+    justify-content: center;
+    /* 横並びのアイテムを左右の中央に配置 */
+    align-items: end;
+    /* アイテムを下に配置 */
     background-color: #d4a48e;
-}
-
-.footer-button {
-    margin: 10px 30px;
+    position: absolute;
+    /* footerを画面の一番下にするため（relativeは.heigtset）*/
+    bottom: 0;
+    width: 100%;
+    gap: 2vw;
 }
 
 .footer-img {
-    margin-top: 1vw;
+    margin-top: 2vw;
     height: 3vw;
-    min-height: 30px; /* mobileでもアイコンが小さくなりすぎないように */
+    min-height: 3rem;
+    /* mobileでもアイコンが小さくなりすぎないように */
 }
-
-

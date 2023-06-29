@@ -10,76 +10,89 @@
 </head>
 
 <body>
-    <!--MENU-->
-    <!--Parent Flex container with .menu-container-->
-    <!--.menu-container has 6 flex items / 1 .menu-icon and 5 .menu-button-->
-    <nav class="menu-container">
-        <img class="menu-icon" src="../imgs/kuninyan-icon.jpg"
-            alt="This is a picture of the mascot for Kunitachi-shi named Kuninyan.">
-        <a class="menu-button" href="../index.html">HOME</a>
-        <a class="menu-button" href="history.html">HISTORY</a>
-        <a class="menu-button" href="spot.html">SPOT</a>
-        <a class="menu-button" href="event.html">EVENT</a>
-        <a class="menu-button" href="kuninyan.html">KUNINYAN</a>
-    </nav>
+    <section class="heightset">
+        <!--MENU-->
+        <!--Parent Flex container with .menu-container-->
+        <!--.menu-container has 6 flex items / 1 .menu-icon and 5 .menu-button-->
+        <nav class="menu-container">
+            <img class="menu-icon" src="../imgs/kuninyan-icon.jpg"
+                alt="This is a picture of the mascot for Kunitachi-shi named Kuninyan.">
+            <a class="menu-button" href="../index.html">HOME</a>
+            <a class="menu-button" href="history.html">HISTORY</a>
+            <a class="menu-button" href="spot.html">SPOT</a>
+            <a class="menu-button" href="event.html">EVENT</a>
+            <a class="menu-button" href="kuninyan.html">KUNINYAN</a>
+            <!-- for mobile -->
+            <input type="checkbox" id="check">
+            <label for="check" class="menu-hamburger">
+                <img src="../imgs/hamburger-menu.svg" alt="This is a hamburger-menu button." />
+            </label>
+            <div class="menu-list-mobile">
+                <a class="menu-button-m" href="../index.html">HOME</a>
+                <a class="menu-button-m" href="history.html">HISTORY</a>
+                <a class="menu-button-m" href="spot.html">SPOT</a>
+                <a class="menu-button-m" href="event.html">EVENT</a>
+                <a class="menu-button-m" href="kuninyan.html">KUNINYAN</a>
+            </div>
+        </nav>
 
-    <!--FLOATED_LEFT PAGE-->
-    <!--The outermost block with .history-container-->
-    <!--.histroy-container surrounds an article element which includes a Float element '.history-picture'-->
-    <section class="history-container">
-        <article>
-            <img src="../imgs/kunitachieki-old.jpg" class="history-picture"
-                alt="This is a picture of the former Kunitachi station.">
-            <h1 class="history-title">HISTORY of Kunitachi</h1>
-            <p class="history-text">
-                Once upon a time, there was a village called Yaho that thrived with rice farming
-                and agriculture due to its suitable soil for paddy fields. In 1889, Yaho Village,
-                Aoyagi Village, and Ishida Village Enclave merged to become "Yaho Village,"
-                the predecessor of the city of Kunitachi.
-            </p>
-            <p class="history-text">
-                In the late Taisho period, the northern part of the village, which was originally
-                forested, underwent development by the Hakone Land Company. Aimed at creating an
-                "ideal cultural and educational city," the transformation began with the relocation
-                of Kunitachi Music University and the opening of Kokuritsu Station in 1926,
-                followed by the relocation of Hitotsubashi University in 1927. The opening of
-                Kunitachi Station saw the construction of the distinctive "Former Kunitachi Station"
-                with its red triangular roof and white walls. In 1934, cherry trees were planted
-                along the University Street to commemorate the birth of the Crown Prince in 1933.
-            </p>
-            <p class="history-text">
-                Subsequently, the population continued to grow, and in 1951, Yaho Village became
-                Kunitachi Town. Around that time, a movement called the "Designation of the Cultural
-                and Educational District" emerged, led by citizens and students, resulting in the
-                district's designation in 1952. In 1965, the population exceeded 50,000, and in 1967,
-                "Kunitachi City" was born.
-            </p>
-            <p class="history-text">
-                By the way, the Former Kunitachi Station was dismantled in 2006 during the elevation
-                work on the JR Chuo Line. It served as a station building for 80 years and was mourned
-                by many citizens. However, in 2020, it was rebuilt to its original appearance and
-                transformed into a public facility. It consists of not only a historic preservation
-                area but also a "History Exhibition Room," "Tourist Information Center," and versatile
-                spaces such as meeting, resting, and event areas in the "Hall" and "Outdoor Space."
-            </p>
-        </article>
+        <!--FLOATED_LEFT PAGE-->
+        <!--The outermost block with .history-container-->
+        <!--.histroy-container surrounds an article element which includes a Float element '.history-picture'-->
+        <section class="history-container">
+            <article>
+                <img src="../imgs/kunitachieki-old.jpg" class="history-picture"
+                    alt="This is a picture of the former Kunitachi station.">
+                <h1 class="history-title">HISTORY of Kunitachi</h1>
+                <p class="history-text">
+                    Once upon a time, there was a village called Yaho that thrived with rice farming
+                    and agriculture due to its suitable soil for paddy fields. In 1889, Yaho Village,
+                    Aoyagi Village, and Ishida Village Enclave merged to become "Yaho Village,"
+                    the predecessor of the city of Kunitachi.
+                </p>
+                <p class="history-text">
+                    In the late Taisho period, the northern part of the village, which was originally
+                    forested, underwent development by the Hakone Land Company. Aimed at creating an
+                    "ideal cultural and educational city," the transformation began with the relocation
+                    of Kunitachi Music University and the opening of Kokuritsu Station in 1926,
+                    followed by the relocation of Hitotsubashi University in 1927. The opening of
+                    Kunitachi Station saw the construction of the distinctive "Former Kunitachi Station"
+                    with its red triangular roof and white walls. In 1934, cherry trees were planted
+                    along the University Street to commemorate the birth of the Crown Prince in 1933.
+                </p>
+                <p class="history-text">
+                    Subsequently, the population continued to grow, and in 1951, Yaho Village became
+                    Kunitachi Town. Around that time, a movement called the "Designation of the Cultural
+                    and Educational District" emerged, led by citizens and students, resulting in the
+                    district's designation in 1952. In 1965, the population exceeded 50,000, and in 1967,
+                    "Kunitachi City" was born.
+                </p>
+                <p class="history-text">
+                    By the way, the Former Kunitachi Station was dismantled in 2006 during the elevation
+                    work on the JR Chuo Line. It served as a station building for 80 years and was mourned
+                    by many citizens. However, in 2020, it was rebuilt to its original appearance and
+                    transformed into a public facility. It consists of not only a historic preservation
+                    area but also a "History Exhibition Room," "Tourist Information Center," and versatile
+                    spaces such as meeting, resting, and event areas in the "Hall" and "Outdoor Space."
+                </p>
+            </article>
+        </section>
+
+        <!--FOOTER-->
+        <!--Parent Flex container with .footer-container-->
+        <!--.footer-container has 3 flex itmes / All of them are .footer-button-->
+        <footer class="footer-container">
+            <a class="footer-button" href="https://twitter.com">
+                <img class="footer-img" src="../imgs/footer-twitter.png" alt="This is an link icon of Twitter.">
+            </a>
+            <a class="footer-button" href="https://instagram.com">
+                <img class="footer-img" src="../imgs/footer-instagram.png" alt="This is an link icon of Instagram.">
+            </a>
+            <a class="footer-button" href="https://facebook.com">
+                <img class="footer-img" src="../imgs/footer-facebook.png" alt="This is an link icon of Facebook.">
+            </a>
+        </footer>
     </section>
-
-    <!--FOOTER-->
-    <!--Parent Flex container with .footer-container-->
-    <!--.footer-container has 3 flex itmes / All of them are .footer-button-->
-    <footer class="footer-container">
-        <a class="footer-button" href="https://twitter.com">
-            <img class="footer-img" src="../imgs/footer-twitter.png" alt="This is an link icon of Twitter.">
-        </a>
-        <a class="footer-button" href="https://instagram.com">
-            <img class="footer-img" src="../imgs/footer-instagram.png" alt="This is an link icon of Instagram.">
-        </a>
-        <a class="footer-button" href="https://facebook.com">
-            <img class="footer-img" src="../imgs/footer-facebook.png" alt="This is an link icon of Facebook.">
-        </a>
-    </footer>
-
 </body>
 
 </html>
